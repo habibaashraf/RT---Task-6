@@ -1,0 +1,20 @@
+<head>
+  <title>Photos</title>
+</head>
+
+<body class="padding">
+  <h3>Photos</h3>
+
+  <div class="container">
+    <div class="row ml-2">
+      <div class="col col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-5" *ngFor ="let each of result | slice:0:9">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="{{each['url']}}">
+          <div class="card-body">
+            <h4 class="card-title">{{each['title']}}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
